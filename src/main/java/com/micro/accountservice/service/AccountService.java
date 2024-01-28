@@ -9,4 +9,6 @@ public interface AccountService {
      * @param customerDto {@link CustomerDto}
      */
     void createAccount(CustomerDto customerDto);
+
+    CustomerDto fetchAccount(String mobileNumber);
 }
