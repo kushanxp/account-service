@@ -3,10 +3,12 @@ package com.micro.accountservice.entity;
 import com.fasterxml.jackson.databind.ser.Serializers;
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 @Data
+@EqualsAndHashCode(callSuper = false)
 public class Customer extends BaseEntity {
 
     @Id
